@@ -1,0 +1,59 @@
+18. La salida "Hola mundo" con retorno de carro se ha debido al comando puts. La línea inferior, => nil, muestra el resultado devuelto por la operación (ninguno, ya que sólo muestra la cadena de caracteres, no lo devuelve).
+
+21. En el primero, al ponerlo en un puts se muestra una tabulación y un retorno de carro (ya que con las dobles comillas se interpolan las expresiones dentro de la cadena), mientras que en la segunda se muestra \t\n ya que se usan comillas simples, como una unión de 4 caracteres sencillos (y no se evaluan las expresiones en la cadena).
+
+22. Es el equivalente a comillas simples ('). Muestra por pantalla hello world\n (sin analizar el retorno de carro). Muestra el conjunto de caracteres tal cual ('a', 'b', 'c'), ya que se analiza el contenido del elemento como un todo, sin evaluar si tienen comillas dobles o no).
+
+23. Es el equivalente a comillas dobles ("). Muestra por pantalla hellow world seguido de un salto de línea, analizando el \n. Se analizan los elementos internos, por lo que las comillas de los caracteres se representan como " \" ", no como ".
+
+24. Quedan 2 líneas concatenadas (separadas por \n), con cada elemento precedido y seguido con dobles guiones (--):
+
+--4--\n--2--\n
+
+--4--
+--2--
+
+25. La representación no interpolada (con comillas simples) de la concateniación de --#{a}-- con --#{b}-- separados por \n. Como no se han evaluado las expresiones, se muestra el contenido literal (texto escrito), no las variables que representan.
+
+26.
+a) he (2 caracteres empezando desde el 0 (h) hasta 2 más adelante (e))
+b) o (1 carácter desde la posición -1 (o, anterior a la (h) de forma cíclica)
+c) hello (10 caracteres empezando desde el 0(h) hasta 10 más adelante (nil, que no se muestra por pantalla)). Es quivalente a usar s[0, 5]
+
+27. Queda la concatenación entre "hello" y " world", o sea, "hello world", apendizando el contenido de la segunda cadena en la primera.
+
+28. Quedan 3 puntos suspensivos (repetición o multiplicación de '.' por 3).
+
+29. Queda la triple repetición de la evaluación de la expresión entre comillas (a = a + 1 -> a = 1 + 1 -> a = 2), con espacios entre sí. Cada vez que se invoca el comando "#{a=a+1} "*3 se ve incrementado el valor de a (1, 2, 3, 4...).
+
+30. Un array formado por 4 palabras de la frase en letras minúsculas, sin evaluar su contenido, teniendo en cuenta que se delimitan por espacios.
+
+31. Un array de 2 palabras sencillas (\t y \n), que no son considerados caracteres especiales.
+
+32. Un array de 2 caracteres especiales, que se consideran como tabulación y salto de línea.
+
+33. Un objeto de la clase Array que contiene 3 elementos no iniciados (puestos a nil).
+
+34. Un objeto de la clase Array que contiene 3 elementos iniciados a 0.
+
+35. Un objeto de la clase Array (matriz bidimensional en este caso) que ha sido copiado de la matriz "x".
+
+36. Un objeto de la clase Array que contiene 3 elementos que han sido inicializados en función del bloque de código adjunto en la invocación (código contenido en llaves). Para cada elemento del vector (i), se multiplica por 2 (2*i).
+
+37. 
+a) a[1,1] -> 1 elemento empezando a contar por el elemento de índice 1 ("b")
+b) a[-2,2] -> 2 elementos empezando a contar por el elemento de índice -2 (size - 2 = + 3) ("d", "e")
+c) a[0..2] -> elementos contenidos entre los índices 0 y 2 ("a", "b", "c").
+d) a[0...1] -> Equivalente a a[0,1], muestra el primer elemento contando desde el índice 0 ("a").
+e) a[-2..-1] -> Muestra los elementos desde el índice -2 (5-2 = +3 ("d") hasta el elemento del índice -1 (5-1 = +4 ("e")) ("d", "e").
+
+38. 
+a) Asigna los 2 primeros elementos a "A" y "B", respectivamente.
+b) Asigna los 3 últimos elementos a "C", "D" y "E", respectivamente.
+c) Añade al comienzo los elementos 1, 2 y 3
+d) Elimina los 2 primeros elementos (1 y 2)
+e) Asigna el último elemento el valor "Z"
+f) Asigna a los 2 últimos valores el objeto nulo (nil)
+
+39. 
+a) [1, 2, 3]

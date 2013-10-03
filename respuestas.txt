@@ -1,6 +1,6 @@
 18. La salida "Hola mundo" con retorno de carro se ha debido al comando puts. La línea inferior, => nil, muestra el resultado devuelto por la operación (ninguno, ya que sólo muestra la cadena de caracteres, no lo devuelve).
 
-21. En el primero, al ponerlo en un puts se muestra una tabulación y un retorno de carro (ya que con las dobles comillas se interpolan las expresiones dentro de la cadena), mientras que en la segunda se muestra \t\n ya que se usan comillas simples, como una unión de 4 caracteres sencillos (y no se evaluan las expresiones en la cadena).
+21. En el primero, al ponerlo en un puts se muestra una tabulación y un retorno de carro (ya que con las dobles comillas se interpolan las expresiones dentro de la cadena), mientras que en la segunda se muestra \t\n ya que se usan comillas simples, como una unión de 4 caracteres sencillos (y no se evalúan las expresiones en la cadena).
 
 22. Es el equivalente a comillas simples ('). Muestra por pantalla hello world\n (sin analizar el retorno de carro). Muestra el conjunto de caracteres tal cual ('a', 'b', 'c'), ya que se analiza el contenido del elemento como un todo, sin evaluar si tienen comillas dobles o no).
 
@@ -13,14 +13,14 @@
 --4--
 --2--
 
-25. La representación no interpolada (con comillas simples) de la concateniación de --#{a}-- con --#{b}-- separados por \n. Como no se han evaluado las expresiones, se muestra el contenido literal (texto escrito), no las variables que representan.
+25. La representación no interpolada (con comillas simples) de la concatenación de --#{a}-- con --#{b}-- separados por \n. Como no se han evaluado las expresiones, se muestra el contenido literal (texto escrito), no las variables que representan.
 
 26.
 a) he (2 caracteres empezando desde el 0 (h) hasta 2 más adelante (e))
 b) o (1 carácter desde la posición -1 (o, anterior a la (h) de forma cíclica)
-c) hello (10 caracteres empezando desde el 0(h) hasta 10 más adelante (nil, que no se muestra por pantalla)). Es quivalente a usar s[0, 5]
+c) hello (10 caracteres empezando desde el 0(h) hasta 10 más adelante (nil, que no se muestra por pantalla)). Es equivalente a usar s[0, 5]
 
-27. Queda la concatenación entre "hello" y " world", o sea, "hello world", apendizando el contenido de la segunda cadena en la primera.
+27. Queda la concatenación entre "hello" y " world", o sea, "hello world", añadiendo el contenido de la segunda cadena en la primera.
 
 28. Quedan 3 puntos suspensivos (repetición o multiplicación de '.' por 3).
 
@@ -97,7 +97,7 @@ c) true -> Pregunta si 99.9 pertenece o está incluido en ese rango.
 a) TrueClass
 b) FalseClass
 c) hello -> if 0 devuelve true, ya que se considera que el valor 0 existe.
-d) "" -> if nil devuelve false, ya que nil no es ningun valor.
+d) "" -> if nil devuelve false, ya que nil no es ningún valor.
 c) hello / warning -> "" es true, y se avisa al usuario de que hay una cadena de caracteres en una condición.
 
 47. 
@@ -110,7 +110,7 @@ f) trye -> :sym.to_s ("sym") si es igual a "sym"
 
 48.
 a) Rub -> se ha sustituido el último carácter por ""
-b) RubJava -> se impribe s y posteriormente t, sin retorno de carro ni espacio entre ambos (equivalente a print s+t, que imprime la concatenación)
+b) RubJava -> se imprime s y posteriormente t, sin retorno de carro ni espacio entre ambos (equivalente a print s+t, que imprime la concatenación)
 
 49.
 Imprime la salida formateada de ese vector [3, "rubies"], indicando que primero se coloca un entero (en base 10) y luego una cadena de caracteres (string), separados por un espacio. Es equivalente a usar printf
@@ -124,12 +124,12 @@ c) [1, 2, 3] -> Asigna a los valores x, y, z los valores del vector [1, 2, 3] (x
 a) [:a, :b] -> Se muestra el conjunto de las claves
 b) [1, 2] -> Se muestra el conjunto de los valores
 c) 3 -> Se añade el elemento con valor 3 y clave :c (símbolo)
-d) {:a=>1, :b=>2, :c=>3} -> Se muestra todo el hash (clave => simbolo)
+d) {:a=>1, :b=>2, :c=>3} -> Se muestra todo el hash (clave => símbolo)
 e) {:a=>1, :b=>2, :c=>3} -> se borra el elemento con clave 'a' (ninguno, ya que sólo hay símbolos, no strings).
 g) {:b=>2, :c=>3} -> se borra el elemento con clave :a (valor 1)
 h) {:a=>1} -> Borrado condicional. Se borran los elementos con valor par (val % 2 == 0), en este caso b=>2, c=>4
 
-52. Invoca al bloque de código adjunto en el método definido (en este caso, ninguno) pasándole los parámetros 4 y 5 al bloque. Como no se ha definido ningún metodo y estamos en la función principal, devuelve un error al intentar invocar yield.
+52. Invoca al bloque de código adjunto en el método definido (en este caso, ninguno) pasándole los parámetros 4 y 5 al bloque. Como no se ha definido ningún método y estamos en la función principal, devuelve un error al intentar invocar yield.
 
 53.
 a) Crea un hash vacío (clase Hash).
@@ -144,5 +144,4 @@ c.keys.sort.each { |k| puts c[k] }
   Luego, se ordenan con el método sort (como son caracteres, se ordenan alfabéticamente, pero ya están ordenados, por lo que no se hace nada).
   Finalmente, se invoca al método each. Para cada clave k en el conjunto ordenado de claves de c, se imprime por pantalla el valor del Hash que tiene por clave k.
   
-
 

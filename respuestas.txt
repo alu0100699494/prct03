@@ -56,4 +56,69 @@ e) Asigna el último elemento el valor "Z"
 f) Asigna a los 2 últimos valores el objeto nulo (nil)
 
 39. 
-a) [1, 2, 3]
+a) [1, 2, 3] -> Transforma el conjunto de números (del 1 al 4 sin contar el último).
+b) [1, 2, 3, 4, 5] -> Añade al final de nuestro vector los elementos 4 y 5
+c) [1, 2, 3, 4, 5, [6, 7, 8]] -> Añade al final el vector el elemento vector [6, 7, 8]
+d) Error, ya que no se puede sumar un array con un entero (debería ser [9], no 9)
+
+40.
+a) ["a", "b", "c", "b", "a"] -> Guarda en x un array de palabras compuesto por los elementos que están en corchetes ("a", "b"...)
+b) ["a", "a"] -> Elimina de x el subvector de palabras formado por "b", "c" y "d"
+
+41. [0, 0, 0, 0, 0, 0, 0, 0] -> iguala Z a 8 repeticiones de un elemento (0), formando un array de 8 elementos.
+
+42. 
+a) [1] -> Inserta el elemento 1 en a (al final)
+b) [1, 2, 3] -> Inserta los elementos 2 y 3 en a (al final)
+c) [1, 2, 3, [4, 5, 6]] -> Inserta el vector [4, 5, 6] en a (al final)
+d) [1, 2, 3, [4, 5, 6], 7, 8] -> Concatena (inserta) al final de a los elementos 7 y 8
+
+43. 
+a) [1, 2, 3, 4, 5] -> Unión de a y b (sin repetir elementos), partiendo de los elementos de a
+b) [5, 4, 3, 2, 1] -> Unión de b y a (sin repetir elementos), partiendo de los elementos de b
+c) [2, 3, 4] -> Intersección de a y b(sin repetir elementos), partiendo de los elementos de a
+d) [4, 3, 2] -> Intersección de b y a(sin repetir elementos), partiendo de los elementos de b
+
+44.
+a) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> Transforma el rango (1..10) en un array de 10 elementos que comprenden ese rango.
+b) [1, 2, 3, 4, 5, 6, 7, 8, 9] -> Transforma el rango (1...10) en un array de 9 elementos que comprenden ese rango menos el último elemento (10).
+c) false -> Pregunta si el elemento 10 está incluido en b
+d) true -> Pregunta si el elemento 8 está incluido en b
+e) 1 3 5 7 9 -> Partiendo del primer elemento, y saltando de 2 en 2 (step(2)), imprime el valor del vector b en esa posición seguido de un espacio.
+f) error -> Se precisa usar paréntesis en el rango, ya que ruby detecta que se intenta usar el método en el entero 3, y no en el rango en sí.
+
+
+45.
+a) true -> Pregunta si 50 es miembro de ese rango.
+b) true -> Pregunta si 99.9 es miembro a ese rango.
+c) true -> Pregunta si 99.9 pertenece o está incluido en ese rango.
+
+46.
+a) TrueClass
+b) FalseClass
+c) hello -> if 0 devuelve true, ya que se considera que el valor 0 existe.
+d) "" -> if nil devuelve false, ya que nil no es ningun valor.
+c) hello / warning -> "" es true, y se avisa al usuario de que hay una cadena de caracteres en una condición.
+
+47. 
+a) Symbol
+b) false -> un símbolo y una cadena de caracteres no son iguales
+c) :"a long symbol" (símbolo con el nombre indicado)
+d) Symbol
+e) true -> :sym si es igual a 'sym'.to_sym (:sym)
+f) trye -> :sym.to_s ("sym") si es igual a "sym"
+
+48.
+a) Rub -> se ha sustituido el último carácter por ""
+b) RubJava -> se impribe s y posteriormente t, sin retorno de carro ni espacio entre ambos (equivalente a print s+t, que imprime la concatenación)
+
+49.
+Imprime la salida formateada de ese vector [3, "rubies"], indicando que primero se coloca un entero (en base 10) y luego una cadena de caracteres (string), separados por un espacio. Es equivalente a usar printf
+
+50. 
+a) [4, 5] -> Asigna a x el valor 4 y a y el valor 5
+b) 4 -> si z (z = x = 4) es mayor que y (4), se imprime x, y si no, se imprime y
+c) [1, 2, 3] -> Asigna a los valores x, y, z los valores del vector [1, 2, 3] (x = 1, y = 2, z = 3).
+
+51.
+

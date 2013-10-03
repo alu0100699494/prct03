@@ -120,5 +120,29 @@ a) [4, 5] -> Asigna a x el valor 4 y a y el valor 5
 b) 4 -> si z (z = x = 4) es mayor que y (4), se imprime x, y si no, se imprime y
 c) [1, 2, 3] -> Asigna a los valores x, y, z los valores del vector [1, 2, 3] (x = 1, y = 2, z = 3).
 
-51.
+51. Se ha generado un hash ("diccionario") con 2 entradas (2 claves y 2 valores)
+a) [:a, :b] -> Se muestra el conjunto de las claves
+b) [1, 2] -> Se muestra el conjunto de los valores
+c) 3 -> Se añade el elemento con valor 3 y clave :c (símbolo)
+d) {:a=>1, :b=>2, :c=>3} -> Se muestra todo el hash (clave => simbolo)
+e) {:a=>1, :b=>2, :c=>3} -> se borra el elemento con clave 'a' (ninguno, ya que sólo hay símbolos, no strings).
+g) {:b=>2, :c=>3} -> se borra el elemento con clave :a (valor 1)
+h) {:a=>1} -> Borrado condicional. Se borran los elementos con valor par (val % 2 == 0), en este caso b=>2, c=>4
+
+52. Invoca al bloque de código adjunto en el método definido (en este caso, ninguno) pasándole los parámetros 4 y 5 al bloque. Como no se ha definido ningún metodo y estamos en la función principal, devuelve un error al intentar invocar yield.
+
+53.
+a) Crea un hash vacío (clase Hash).
+b) Vuelve a crear un hash vacío (clase Hash).
+
+54. ["hello", "world", "hello", "LPP"] -> Escanea la cadena de caracteres desde la cual se invoca scan en función de una expresión regular /\w+/ ( busca palabras separadas por espacios(\w+) ), e introduciendo todas las palabras como strings en un array.
+
+55. 
+c = { :a => 3, :b => 2, :c => 1 } -> Crea un hash en c, con 3 entradas (3 claves y 3 valores), tal que la clave de el valor 3 es :a, la del valor 2 es :b, y la del valor :c es 1
+c.keys.sort.each { |k| puts c[k] }
+  Primero, se accede al conjunto de claves del hash con el método .keys ( [:a, :b, :c] )
+  Luego, se ordenan con el método sort (como son caracteres, se ordenan alfabéticamente, pero ya están ordenados, por lo que no se hace nada).
+  Finalmente, se invoca al método each. Para cada clave k en el conjunto ordenado de claves de c, se imprime por pantalla el valor del Hash que tiene por clave k.
+  
+
 

@@ -1,3 +1,6 @@
+﻿Respuestas:
+---------------------------
+
 18. La salida "Hola mundo" con retorno de carro se ha debido al comando puts. La línea inferior, => nil, muestra el resultado devuelto por la operación (ninguno, ya que sólo muestra la cadena de caracteres, no lo devuelve).
 
 21. En el primero, al ponerlo en un puts se muestra una tabulación y un retorno de carro (ya que con las dobles comillas se interpolan las expresiones dentro de la cadena), mientras que en la segunda se muestra \t\n ya que se usan comillas simples, como una unión de 4 caracteres sencillos (y no se evalúan las expresiones en la cadena).
